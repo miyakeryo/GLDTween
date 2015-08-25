@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117AB29E1B8BECDB00CD92C7 /* GLDTweenChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AB29B1B8BECDB00CD92C7 /* GLDTweenChain.m */; };
+		117AB29F1B8BECDB00CD92C7 /* GLDTweenChainAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AB29D1B8BECDB00CD92C7 /* GLDTweenChainAction.m */; };
+		117AB2A21B8BED0800CD92C7 /* GLDTween+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AB2A11B8BED0800CD92C7 /* GLDTween+Chain.m */; };
 		3D5366F519DC31D10017C6B8 /* GLDTweenSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5366F419DC31D10017C6B8 /* GLDTweenSelector.m */; };
 		3D5366F819DC337F0017C6B8 /* GLDTweenBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5366F719DC337F0017C6B8 /* GLDTweenBlock.m */; };
 		3D53670C19DE16270017C6B8 /* TouchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D53670B19DE16270017C6B8 /* TouchDemoViewController.m */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		117AB29A1B8BECDB00CD92C7 /* GLDTweenChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLDTweenChain.h; path = ../../GLDTween/GLDTweenChain.h; sourceTree = "<group>"; };
+		117AB29B1B8BECDB00CD92C7 /* GLDTweenChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLDTweenChain.m; path = ../../GLDTween/GLDTweenChain.m; sourceTree = "<group>"; };
+		117AB29C1B8BECDB00CD92C7 /* GLDTweenChainAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLDTweenChainAction.h; path = ../../GLDTween/GLDTweenChainAction.h; sourceTree = "<group>"; };
+		117AB29D1B8BECDB00CD92C7 /* GLDTweenChainAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLDTweenChainAction.m; path = ../../GLDTween/GLDTweenChainAction.m; sourceTree = "<group>"; };
+		117AB2A01B8BED0800CD92C7 /* GLDTween+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLDTween+Chain.h"; path = "../../GLDTween/GLDTween+Chain.h"; sourceTree = "<group>"; };
+		117AB2A11B8BED0800CD92C7 /* GLDTween+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GLDTween+Chain.m"; path = "../../GLDTween/GLDTween+Chain.m"; sourceTree = "<group>"; };
 		3D5366F319DC31D10017C6B8 /* GLDTweenSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GLDTweenSelector.h; path = ../../GLDTween/GLDTweenSelector.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3D5366F419DC31D10017C6B8 /* GLDTweenSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = GLDTweenSelector.m; path = ../../GLDTween/GLDTweenSelector.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3D5366F619DC337F0017C6B8 /* GLDTweenBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GLDTweenBlock.h; path = ../../GLDTween/GLDTweenBlock.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -81,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117AB2A31B8BEF8400CD92C7 /* chain */ = {
+			isa = PBXGroup;
+			children = (
+				117AB2A01B8BED0800CD92C7 /* GLDTween+Chain.h */,
+				117AB2A11B8BED0800CD92C7 /* GLDTween+Chain.m */,
+				117AB29A1B8BECDB00CD92C7 /* GLDTweenChain.h */,
+				117AB29B1B8BECDB00CD92C7 /* GLDTweenChain.m */,
+				117AB29C1B8BECDB00CD92C7 /* GLDTweenChainAction.h */,
+				117AB29D1B8BECDB00CD92C7 /* GLDTweenChainAction.m */,
+			);
+			name = chain;
+			sourceTree = "<group>";
+		};
 		3D53670219DD57610017C6B8 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +186,7 @@
 				3DAE9D4419DB9DA0003692A1 /* GLDTween.m */,
 				3DAE9D4A19DBA6D4003692A1 /* core */,
 				3DAE9D4919DBA11D003692A1 /* plugins */,
+				117AB2A31B8BEF8400CD92C7 /* chain */,
 			);
 			name = GLDTween;
 			sourceTree = "<group>";
@@ -301,9 +324,12 @@
 				3DAE9D1F19DB9D30003692A1 /* main.m in Sources */,
 				3DAE9D4D19DBB3C9003692A1 /* GLDTweenProperty.m in Sources */,
 				3DAE9D4519DB9DA0003692A1 /* GLDTween.m in Sources */,
+				117AB29E1B8BECDB00CD92C7 /* GLDTweenChain.m in Sources */,
 				3D53675519DEE4550017C6B8 /* GLDTweenPropertyPlugin.m in Sources */,
+				117AB2A21B8BED0800CD92C7 /* GLDTween+Chain.m in Sources */,
 				3D5366F819DC337F0017C6B8 /* GLDTweenBlock.m in Sources */,
 				3DAE9D5319DBB5EE003692A1 /* GLDTweenTween.m in Sources */,
+				117AB29F1B8BECDB00CD92C7 /* GLDTweenChainAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
